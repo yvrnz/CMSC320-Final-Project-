@@ -24,6 +24,34 @@ body {
     
 }
 
+table.dataframe {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+table.dataframe thead {
+  background-color: #4f46e5;
+  color: white;
+}
+
+table.dataframe th, 
+table.dataframe td {
+  padding: 10px 14px;
+}
+
+table.dataframe tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+table.dataframe tbody tr:hover {
+  background-color: #e0e7ff;
+  transition: 0.2s;
+}
+
 pre {
     margin: 0;
     overflow-x: auto;
@@ -192,12 +220,6 @@ code {
   </div>
 
   <div class="text-container">
-      <h1>Data Preprocessing</h1>
-        Result:
-  </div>
-
-<div class="text-container">
-    {{ table | safe }}
     <table border="1" class="dataframe">
       <thead>
         <tr style="text-align: right;">
@@ -276,7 +298,7 @@ code {
         </tr>
       </tbody>
     </table>
- </div>
+   </div>
 
 
 
