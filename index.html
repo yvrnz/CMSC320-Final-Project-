@@ -32,8 +32,22 @@ body {font-family: "Lato", sans-serif}
                            that contains data pertaining to Formula 1 World Championships that took place between 1950 - 2024.</p>
     <p class="w3-justify"> This dataset was created by a Principal Data Scientist on Kaggle named Vopani, who was inpired by the anount of data that has been collected and analyzed to design, build, and test drive Formula 1 cars. Vopani's Formaula 1 World Championship dataset 
                           can be found at <a href="https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020">https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020</a></p>
-    
   </div>
+  
+  <!-- Imports -->
+  <pre><code class="language-python">
+    import pandas as pd
+    import kagglehub
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from dateutil import parser
+    import string
+    from datetime import datetime
+    from kagglehub import KaggleDatasetAdapter
+    from scipy.stats import chi2_contingency
+    from statsmodels.stats.weightstats import ztest as ztest
+    from scipy.linalg import fractional_matrix_power
+  </code></pre>
   
 </div>
  
